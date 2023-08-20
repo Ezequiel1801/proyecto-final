@@ -33,7 +33,7 @@ a{
     height: 150vh;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 10% auto auto 5% !important;
+    grid-template-rows: 10% auto auto 5%;
     grid-template-areas: 
         "header"
         "main"
@@ -70,8 +70,18 @@ p{
 
 footer{
     grid-area: footer;
-    padding: 20px 10px;
     background-color: #FFB2BF;
+}
+
+footer div{
+    display: flex;
+    padding: 5px 10px;
+}
+
+footer div img{
+    display: inline-block;
+    height: 30px;
+    width: 30px;
 }
 
 .img-messiwc{
@@ -110,32 +120,7 @@ footer{
     height: 80vh;
 }
 
-@media screen and (min-width: 600px){
-
-    .falso-body{
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 0.5fr auto auto 0.5fr;
-        grid-template-areas: 
-            "header header header"
-            "main   main   main"
-            "main   main   imgmessi"
-            "footer footer footer";
-        gap: 10px;
-        background-color: red;
-    }
-
-    .img-cont{
-        grid-area: imgmessi;
-        max-width: 350px;
-        max-height: 530px;
-        margin: 0 auto;
-        overflow: hidden;
-    }
-
-    main{
-        grid-area: main;
-    }
-}
+/* mq Desktop */
 
 @media screen and (min-width: 1024px){
 
@@ -172,8 +157,8 @@ footer{
         padding: 0px 15px 0px 15px;
     }
 
-    p{
-        font-size: 30px;
+    main div p{
+        font-size: 27px !important;
     }
 
     main{
