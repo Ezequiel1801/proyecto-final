@@ -8,6 +8,10 @@
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
 }
 
+body{
+    background-color: black;
+}
+
 header{
     display: flex;
     align-items: center;
@@ -40,7 +44,6 @@ a{
         "imgmessi"
         "footer";
     gap: 10px;
-    background-color: black;
 }
 
 main{
@@ -120,6 +123,25 @@ footer div img{
     height: 80vh;
 }
 
+/* Estilos galeria */
+
+body{
+    color: white;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+.img-messi-joven{
+    gap: 10px;
+}
+
+main section img{
+    max-width: 90%;
+}
+
 /* mq Desktop */
 
 @media screen and (min-width: 1024px){
@@ -158,7 +180,7 @@ footer div img{
     }
 
     main div p{
-        font-size: 27px !important;
+        font-size: 25px !important;
     }
 
     main{
