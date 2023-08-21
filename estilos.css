@@ -37,7 +37,7 @@ a{
     height: 150vh;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 10% auto auto 5%;
+    grid-template-rows: repeat(4, auto);
     grid-template-areas: 
         "header"
         "main"
@@ -67,7 +67,7 @@ main div .parrafo{
 
 p{
     font-size: 15px !important;
-    padding: 5px;
+    padding: 0px 5px 0px 5px;
     text-align: center;
 }
 
@@ -134,13 +134,16 @@ main{
     flex-direction: column;
 }
 
-.img-messi-joven{
+main section .img-messi-joven{
     gap: 10px;
 }
 
 main section img{
-    max-width: 90%;
+    max-width: 100%;
+    padding: 5px 0px 5px 0px;
 }
+
+
 
 /* mq Desktop */
 
