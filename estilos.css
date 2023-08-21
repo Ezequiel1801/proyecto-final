@@ -93,35 +93,6 @@ footer div img{
 
 /* estilos Trofeos */
 
-.falsobody-trofeos{
-    background-color: black;
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 10% auto auto auto 10%;
-    grid-template-areas: 
-        "headertr"
-        "maintr"
-        "maintr"
-        "maintr"
-        "footertr";
-}
-
-.falsobody-trofeos main{
-    grid-area: maintr;
-}
-
-.falsobody-trofeos header{
-    grid-area: headertr;
-}
-
-.falsobody-trofeos footer{
-    grid-area: footertr;
-}
-
-.falsobody-trofeos main section{
-    height: 80vh;
-}
 
 /* Estilos galeria */
 
