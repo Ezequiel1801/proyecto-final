@@ -101,15 +101,97 @@ footer div img{
     justify-content: space-around;
 }
 
+.trofeos div{
+    width: auto;
+}
+
 .disp img{
     display: inline-block;
     width: 95px;
     height: 155px;
+    margin-bottom: 10px;
+}
+
+.disp{
+    text-align: center;
+    margin-bottom: 35px;
 }
 
 .disp p{
-    text-align: center;
     margin-bottom: 5px;
+}
+
+/* trofeos de clubes */
+
+section .mundial-de-clubes img{
+    width: 65px;
+}
+
+section .supercopa-de-europa img{
+    width: 75px;
+}
+
+section .ligue-one img{
+    width: 150px;
+    height: 150px;
+}
+
+section .supercopa-de-francia img{
+    width: 155px;
+}
+
+section .leagues-cup img{
+    width: 125px;
+}
+
+/* trofeos de seleccion */
+
+section .copa-america img{
+    width: 70px;
+}
+
+section .mundial-sub img{
+    width: 60px;
+}
+
+section .juegos-olimpicos img{
+    width: 87px;
+}
+
+section .copa-del-mundo img{
+    width: 65px;
+}
+
+section .finalissima img{
+    width: 105px;
+}
+
+/* trofeos individuales */
+section .balon-de-oro img{
+    width: 115px;
+    height: 115px;
+}
+
+section .bota-de-oro img{
+    width: 135px;
+}
+
+section .pichichi img, .mvp-laliga img, .goleador-champions img, .mvp-europa img{
+    width: 110px;
+}
+
+section .balon-de-oro-mundial img{
+    width: 65px;
+}
+
+/* estilos de letras del salon de trofeos */
+.salon-trofeos h1{
+    font-size: 45px;
+}
+
+.salon-trofeos h2, .salon-trofeos h3, .salon-trofeos h4{
+    font-size: 30px;
+    font-weight: bold;
 }
 
 /* Estilos galeria */
@@ -123,13 +205,13 @@ main section .img-messi-joven{
     gap: 10px;
 }
 
-main section img{
+.galeria section img{
     max-width: 100%;
     padding: 5px 0px 5px 0px;
     border-radius: 10px;
 }
 
-main section iframe{
+.galeria section iframe{
     width: 100%;
     height: 315px;
 }
@@ -187,7 +269,7 @@ main section iframe{
 
     /* mq galeria */
 
-    main section{
+    .galeria section{
         display: grid;
         grid-template-columns: repeat(2, auto);
         gap: 10px;
@@ -196,14 +278,14 @@ main section iframe{
         justify-content: space-evenly;
     }
 
-    main section img{
+    .galeria section img{
         width: 100%;
         height: 600px;
         object-fit: cover;
         padding: 0px;
     }
 
-    main section iframe{
+    .galeria section iframe{
         width: 560px;
         height: 315px;
     }
