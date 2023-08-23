@@ -63,10 +63,11 @@ div .img-cont img{
 
 main div .parrafo{
     grid-area: parrafo;
+    
 }
 
-p{
-    font-size: 15px !important;
+.parrafo{
+    font-size: 15px;
     padding: 0px 5px 0px 5px;
     text-align: center;
 }
@@ -79,6 +80,7 @@ footer{
 footer div{
     display: flex;
     padding: 5px 10px;
+    gap: 10px;
 }
 
 footer div img{
@@ -93,14 +95,26 @@ footer div img{
 
 /* Estilos Trofeos */
 
+.trofeos{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-around;
+}
+
+.disp img{
+    display: inline-block;
+    width: 95px;
+    height: 155px;
+}
+
+.disp p{
+    text-align: center;
+    margin-bottom: 5px;
+}
 
 /* Estilos galeria */
 
-body{
-    color: white;
-}
-
-main{
+main .galeria{
     display: flex;
     flex-direction: column;
 }
