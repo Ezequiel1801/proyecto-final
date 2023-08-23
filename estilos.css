@@ -5,7 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     color: white;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+    font-family: 'Rubik', sans-serif;
 }
 
 body{
@@ -91,7 +91,7 @@ footer div img{
     display: none;
 }
 
-/* estilos Trofeos */
+/* Estilos Trofeos */
 
 
 /* Estilos galeria */
@@ -112,6 +112,7 @@ main section .img-messi-joven{
 main section img{
     max-width: 100%;
     padding: 5px 0px 5px 0px;
+    border-radius: 10px;
 }
 
 main section iframe{
@@ -177,6 +178,8 @@ main section iframe{
         grid-template-columns: repeat(2, auto);
         gap: 10px;
         margin: 10px;
+        align-items: center;
+        justify-content: space-evenly;
     }
 
     main section img{
