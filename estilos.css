@@ -236,6 +236,53 @@ main section .img-messi-joven{
     height: 315px;
 }
 
+/* Estilos contacto */
+
+.main-contacto{
+    display: flex;
+    flex-direction: column;
+}
+
+.text-main{
+    text-align: center;
+    margin: 10px;
+}
+
+.text-main h1{
+    font-size: 35px;
+}
+
+.form-style{
+    background-color: #FFB2BF;
+    margin: auto;
+    margin-bottom: 20px;
+    width: 90%;
+    max-width: 400px;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.formulario{
+    display: grid;
+    text-align: center;
+    font-size: 20px;
+    gap: 10px;
+}
+
+label, input, textarea{
+    color: black;
+}
+
+input, textarea{
+    padding: 5px;
+}
+
+.boton-enviar{
+    background-color: #ff748b;
+    border: none;
+    border-radius: 15px;
+}
+
 /* mq Desktop */
 
 @media screen and (min-width: 600px){
@@ -317,5 +364,31 @@ main section .img-messi-joven{
 
     .salon-trofeos section{
         grid-template-columns: repeat(5, 1fr);
+    }
+
+    /* mq contacto */
+
+    .main-contacto{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .text-main h1{
+        font-size: 100px;
+    }
+
+    .text-main h2{
+        font-size: 60px;
+    }
+
+    .text-main h3{
+        font-size: 35px;
+    }
+
+    .form-style{
+        align-items: center;
+        margin: 30px 0px 30px 0px;
     }
 }

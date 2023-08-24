@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -41,10 +41,25 @@
     </nav>
   </header>
 
-  <main>
-    <h1>Muchas gracias por visitar la pagina de Lionel Messi</h1>
-    <h2>¡Dejanos acá tu opinion sobre Lionel Messi!</h2>
-    <h3>Contanos que te parece su gran historia, sus increibles records que a dia de hoy sigue cosechando con grandeza.</h3>
+  <main class="main-contacto">
+    <div class="text-main">
+      <h1>Muchas gracias por visitar la pagina</h1>
+      <h2>¡Dejanos acá tu opinion sobre Lionel Messi!</h2>
+      <h3>Contanos que te parece su gran historia, sus increibles records que a dia de hoy sigue cosechando con grandeza y sobre su inmenso palmares.</h3>
+    </div>
+    <div class="form-style">
+      <form class="formulario">
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" placeholder="Ingrese su nombre" required>
+        <label for="apellido">apellido:</label>
+        <input type="text" name="apellido" placeholder="Ingrese su apellido">
+        <label for="email">Email:</label>
+        <input type="email" name="email" placeholder="Ingrese su Email" required>
+        <label for="opinion">Dejanos aca tu opinion:</label>
+        <textarea name="opinion" cols="30" rows="10" placeholder="Escribe un mensaje aca..." required></textarea>
+        <input type="submit" value="Enviar el mensaje" class="boton-enviar">
+      </form>
+    </div>
   </main>
 
   <footer>
