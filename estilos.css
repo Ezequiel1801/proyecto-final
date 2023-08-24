@@ -283,6 +283,61 @@ input, textarea{
     border-radius: 15px;
 }
 
+/* Estilos Prox Partidos */
+
+.main-prox-partidos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.partidos-club{
+    background-color: #FFB2BF;
+    border: solid 2px white;
+    margin: 10px;
+}
+
+table{
+    font-size: 18px;
+}
+
+thead{
+    background-color: #ff90a2;
+}
+
+th{
+    padding: 15px 10px;
+    font-weight: bold;
+    color: black;
+}
+
+td{
+    padding: 15px;
+    border-bottom: solid 1px black;
+    color: black;
+}
+
+td p{
+    color: black;
+}
+
+tbody tr:hover{
+    background-color: #ff7e93;
+}
+
+td img{
+    width: 20px;
+    height: 20px;
+}
+
+td .nashville{
+    width: 15px;
+}
+
+td .lafc{
+    width: 23px;
+}
+
 /* mq Desktop */
 
 @media screen and (min-width: 600px){
