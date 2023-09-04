@@ -1,0 +1,125 @@
+.trofeos{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-around;
+}
+
+.trofeos div{
+    width: auto;
+}
+
+.disp{
+    text-align: center;
+    margin-bottom: 35px;
+    img{
+        display: inline-block;
+        width: 95px;
+        height: 155px;
+        margin-bottom: 10px;
+    }
+    p{
+        margin-bottom: 5px;
+    }
+}
+
+section{
+    .mundial-de-clubes{
+        img{
+            width: 65px;
+        }
+    }
+    .supercopa-de-europa{
+        img{
+            width: 75px;
+        }
+    }
+    .ligue-one{
+        img{
+            width: 150px;
+            height: 150px;
+        }
+    }
+    .supercopa-de-francia{
+        img{
+            width: 155px;
+        }
+    }
+    .leagues-cup{
+        img{
+            width: 125px;
+        }
+    }
+    .copa-america{
+        img{
+            width: 70px;
+        }
+    }
+    .mundial-sub{
+        img{
+            width: 60px;
+        }
+    }
+    .juegos-olimpicos{
+        img{
+            width: 87px;
+        }
+    }
+    .copa-del-mundo{
+        img{
+            width: 65px;
+        }
+    }
+    .finalissima{
+        img{
+            width: 105px;
+        }
+    }
+    .balon-de-oro{
+        img{
+            width: 115px;
+            height: 115px;
+        }
+    }
+    .bota-de-oro{
+        img{
+            width: 135px;
+        }
+    }
+    .pichichi, .mvp-laliga, .goleador-champions, .mvp-europa{
+        img{
+            width: 110px;
+        }
+    }
+    .balon-de-oro-mundial{
+        img{
+            width: 65px;
+        }
+    }
+}
+
+.salon-trofeos{
+    h1{
+        font-size: 45px;
+        font-weight: bold;
+    }
+    h2, h3, h4{
+        font-size: 30px;
+        text-decoration: underline;
+    }
+}
+
+/* MQ Tablet */
+
+@media screen and (min-width: 600px){
+    .trofeos{
+        grid-template-columns: repeat(3, auto);
+    }
+}
+
+/* MQ Desktop */
+
+@media screen and (min-width: 1024px){
+    .trofeos{
+        grid-template-columns: repeat(5, auto);
+    }
+}

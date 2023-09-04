@@ -1,0 +1,12 @@
+header{
+    background-color: $color-principal;
+    @include flex(space-around, center);
+    width: 100%;
+    nav{
+        ul{
+            list-style: none;
+            gap: 0.5rem;
+            font-size: 15px;
+        }
+    }
+}

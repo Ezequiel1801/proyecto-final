@@ -1,0 +1,50 @@
+footer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: $color-principal;
+    width: 100vw;
+    .redes{
+        padding: 5px 10px;
+        gap: 10px;
+        text-align: center;
+        img{
+            display: inline-block;
+            height: 35px;
+            width: 35px;
+        }
+        p{
+            color: black;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    }
+    .escudos-clubes{
+        margin: 10px 0px;
+        img{
+            display: inline-block;
+            height: 40px;
+            width: 40px;
+        }
+    }
+}
+
+/* MQ Tablet */
+
+@media screen and (min-width: 600px){
+    footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* MQ Desktop */
+
+@media screen and (min-width: 1024px){
+    footer{
+        width: 100%;
+        .escudos-clubes{
+            padding-top: 5px;
+        }
+    }
+}

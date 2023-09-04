@@ -1,0 +1,331 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family: 'Rubik', sans-serif; }
+
+body {
+  background-color: black; }
+
+header {
+  background-color: #FFB2BF;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%; }
+  header nav ul {
+    list-style: none;
+    gap: 0.5rem;
+    font-size: 15px; }
+
+footer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #FFB2BF;
+  width: 100vw; }
+  footer .redes {
+    padding: 5px 10px;
+    gap: 10px;
+    text-align: center; }
+    footer .redes img {
+      display: inline-block;
+      height: 35px;
+      width: 35px; }
+    footer .redes p {
+      color: black;
+      font-size: 18px;
+      font-weight: bold; }
+  footer .escudos-clubes {
+    margin: 10px 0px; }
+    footer .escudos-clubes img {
+      display: inline-block;
+      height: 40px;
+      width: 40px; }
+
+/* MQ Tablet */
+@media screen and (min-width: 600px) {
+  footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr; } }
+
+/* MQ Desktop */
+@media screen and (min-width: 1024px) {
+  footer {
+    width: 100%; }
+    footer .escudos-clubes {
+      padding-top: 5px; } }
+
+.falso-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+
+.img-messiwc {
+  display: none; }
+
+.img-cont img {
+  width: 100%;
+  padding: 10px 0px; }
+
+main div h1 {
+  padding: 10px;
+  text-align: center; }
+
+main div .parrafo {
+  font-size: 15px;
+  text-align: center;
+  padding: 0px 5px; }
+
+/* MQ Desktop */
+@media screen and (min-width: 1024px) {
+  .main-index {
+    display: grid;
+    grid-template-columns: repeat(2, auto); }
+    .main-index .img-cont .img-messi {
+      display: none; }
+    .main-index .img-cont .img-messiwc {
+      display: inline-block; }
+    .main-index .parrafo {
+      font-size: 22.5px; } }
+
+.trofeos {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-around; }
+
+.trofeos div {
+  width: auto; }
+
+.disp {
+  text-align: center;
+  margin-bottom: 35px; }
+  .disp img {
+    display: inline-block;
+    width: 95px;
+    height: 155px;
+    margin-bottom: 10px; }
+  .disp p {
+    margin-bottom: 5px; }
+
+section .mundial-de-clubes img {
+  width: 65px; }
+
+section .supercopa-de-europa img {
+  width: 75px; }
+
+section .ligue-one img {
+  width: 150px;
+  height: 150px; }
+
+section .supercopa-de-francia img {
+  width: 155px; }
+
+section .leagues-cup img {
+  width: 125px; }
+
+section .copa-america img {
+  width: 70px; }
+
+section .mundial-sub img {
+  width: 60px; }
+
+section .juegos-olimpicos img {
+  width: 87px; }
+
+section .copa-del-mundo img {
+  width: 65px; }
+
+section .finalissima img {
+  width: 105px; }
+
+section .balon-de-oro img {
+  width: 115px;
+  height: 115px; }
+
+section .bota-de-oro img {
+  width: 135px; }
+
+section .pichichi img, section .mvp-laliga img, section .goleador-champions img, section .mvp-europa img {
+  width: 110px; }
+
+section .balon-de-oro-mundial img {
+  width: 65px; }
+
+.salon-trofeos h1 {
+  font-size: 45px;
+  font-weight: bold; }
+
+.salon-trofeos h2, .salon-trofeos h3, .salon-trofeos h4 {
+  font-size: 30px;
+  text-decoration: underline; }
+
+/* MQ Tablet */
+@media screen and (min-width: 600px) {
+  .trofeos {
+    grid-template-columns: repeat(3, auto); } }
+
+/* MQ Desktop */
+@media screen and (min-width: 1024px) {
+  .trofeos {
+    grid-template-columns: repeat(5, auto); } }
+
+.galeria {
+  display: flex;
+  flex-direction: column; }
+  .galeria section img {
+    width: 100%;
+    padding: 5px;
+    border-radius: 10px; }
+  .galeria section iframe {
+    width: 100%;
+    max-height: 100%;
+    height: 315px;
+    padding: 5px; }
+  .galeria .videos-messi {
+    text-align: center; }
+
+/* MQ Tablet */
+@media screen and (min-width: 600px) {
+  .galeria section iframe {
+    width: 60%; } }
+
+/* MQ Desktop */
+@media screen and (min-width: 1024px) {
+  .galeria section {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    margin: 10px;
+    align-items: center;
+    justify-content: space-evenly; }
+    .galeria section img {
+      width: 100%;
+      height: 600px;
+      object-fit: cover; }
+    .galeria section iframe {
+      width: 560px;
+      height: 315px; } }
+
+.main-prox-partidos {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .main-prox-partidos .partidos {
+    margin: 15px; }
+    .main-prox-partidos .partidos h1, .main-prox-partidos .partidos h2 {
+      text-align: center;
+      font-size: 40px;
+      font-weight: bold;
+      text-decoration: underline;
+      padding: 0px; }
+    .main-prox-partidos .partidos table {
+      font-size: 18px;
+      border: solid 2px white; }
+      .main-prox-partidos .partidos table thead {
+        background-color: #ff90a2; }
+        .main-prox-partidos .partidos table thead tr th {
+          padding: 15px 10px;
+          font-weight: bold;
+          color: black; }
+      .main-prox-partidos .partidos table tbody tr {
+        background-color: #FFB2BF; }
+        .main-prox-partidos .partidos table tbody tr td {
+          padding: 15px;
+          border-bottom: solid 1px black;
+          color: black; }
+          .main-prox-partidos .partidos table tbody tr td img {
+            width: 20px;
+            height: 20px; }
+          .main-prox-partidos .partidos table tbody tr td .nashville, .main-prox-partidos .partidos table tbody tr td .uruguay, .main-prox-partidos .partidos table tbody tr td .brasil {
+            width: 15px; }
+          .main-prox-partidos .partidos table tbody tr td .lafc {
+            width: 23px; }
+          .main-prox-partidos .partidos table tbody tr td p {
+            color: black;
+            margin: 0px; }
+          .main-prox-partidos .partidos table tbody tr td .argentina {
+            width: 30px;
+            height: 30px; }
+        .main-prox-partidos .partidos table tbody tr:hover {
+          background-color: #ff7e93; }
+      .main-prox-partidos .partidos table tbody .negro {
+        background-color: black; }
+        .main-prox-partidos .partidos table tbody .negro td {
+          color: white; }
+          .main-prox-partidos .partidos table tbody .negro td p {
+            color: white; }
+        .main-prox-partidos .partidos table tbody .negro:hover {
+          background-color: #686868; }
+  .main-prox-partidos .seleccion table thead {
+    background-color: #3b8cd8; }
+  .main-prox-partidos .seleccion table tbody tr {
+    background-color: white; }
+  .main-prox-partidos .seleccion table tbody tr:hover {
+    background-color: #dfdfdf; }
+  .main-prox-partidos .seleccion table tbody .celeste {
+    background-color: #629cd1; }
+    .main-prox-partidos .seleccion table tbody .celeste:hover {
+      background-color: #8ac5fc; }
+
+@media screen and (min-width: 1024px) {
+  .main-prox-partidos {
+    display: grid;
+    grid-template-columns: 1fr 1fr; }
+    .main-prox-partidos .partidos {
+      justify-self: center; } }
+
+.main-contacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  .main-contacto .text-main {
+    text-align: center;
+    margin: 15px; }
+    .main-contacto .text-main h1 {
+      font-size: 35px; }
+  .main-contacto .form-style {
+    background-color: #FFB2BF;
+    margin: auto;
+    margin-bottom: 20px;
+    width: 90%;
+    max-width: 400px;
+    padding: 15px;
+    border-radius: 15px; }
+    .main-contacto .form-style .formulario {
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-size: 20px;
+      gap: 10px; }
+      .main-contacto .form-style .formulario label {
+        color: black; }
+      .main-contacto .form-style .formulario input, .main-contacto .form-style .formulario textarea {
+        color: black;
+        padding: 5px; }
+      .main-contacto .form-style .formulario .boton-enviar {
+        background-color: #ff748b;
+        border: none;
+        border-radius: 15px; }
+        .main-contacto .form-style .formulario .boton-enviar:hover {
+          background-color: #ff90a2; }
+
+@media screen and (min-width: 1024px) {
+  .main-contacto {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 2fr 1fr; }
+    .main-contacto .text-main h1 {
+      font-size: 100px; }
+    .main-contacto .text-main h2 {
+      font-size: 60px; }
+    .main-contacto .text-main h3 {
+      font-size: 35px; }
+    .main-contacto .form-style {
+      align-items: center;
+      margin: 30px 0px; } }
