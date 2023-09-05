@@ -36,12 +36,10 @@
 @media screen and (min-width: 1024px){
     .galeria{
         section{
-            display: grid;
+            @include grid(space-evenly, center);
             grid-template-columns: auto auto;
             gap: 10px;
             margin: 10px;
-            align-items: center;
-            justify-content: space-evenly;
             img{
                 width: 100%;
                 height: 600px;
