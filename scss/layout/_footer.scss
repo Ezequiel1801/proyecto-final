@@ -9,23 +9,35 @@ footer{
         gap: 10px;
         text-align: center;
         img{
+            @include animacion-img;
             display: inline-block;
             height: 35px;
             width: 35px;
+            &:hover{
+                transform: scale(1.1);
+            }
         }
         p{
             color: black;
             font-size: 18px;
             font-weight: bold;
         }
+        .twitter{
+            border-radius: 10px;
+        }
     }
     .escudos-clubes{
         margin: 10px 0px;
         img{
+            @include animacion-img;
             display: inline-block;
             height: 40px;
             width: 40px;
+            &:hover{
+                transform: scale(1.2);
+            }
         }
+        
     }
 }
 

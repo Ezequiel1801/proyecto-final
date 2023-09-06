@@ -10,7 +10,7 @@
 .img-cont{
     img{
         width: 100%;
-        padding: 10px 0px;
+        @extend %padding-tb;
     }
 }
 
@@ -19,6 +19,8 @@ main{
         h1{
             padding: 10px;
             text-align: center;
+            font-size: 45px;
+            text-decoration: underline;
         }
         .parrafo{
             font-size: 15px;

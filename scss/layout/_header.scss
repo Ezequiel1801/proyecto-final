@@ -6,6 +6,13 @@ header{
         width: 100%;
         .div-header{
             width: 100%;
+            img{
+                @include animacion-img;
+                overflow: visible;
+                &:hover{
+                    transform: scale(1.1);
+                }
+            }
             .header-gr{
                 img{
                     display: none;
@@ -14,9 +21,18 @@ header{
         }
         ul{
             list-style: none;
-            gap: 0.5rem;
+            gap: 1rem;
             font-size: 15px;
             text-align: center;
+            @include animacion-img;
+            overflow: visible;
+            li:hover{
+                background-color: $color-secundario;
+                border-radius: 10px;
+                box-shadow: 10px 5px 5px $color-sombra;
+                transform: scale(1.1);
+                font-weight: bold;
+            }
         }
     }
 }
@@ -32,6 +48,10 @@ header{
                     justify-content: space-around;
                     img{
                         display: inline-block;
+                        @include animacion-img;
+                        &:hover{
+                            transform: scale(1.1);
+                        }
                     }
                 }
             }

@@ -9,3 +9,8 @@
     justify-content: $justify;
     align-items: $align;
 }
+
+@mixin animacion-img{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
