@@ -8,6 +8,12 @@
 body {
   background-color: black; }
 
+.img-cont img {
+  padding: 10px 0px; }
+
+.galeria section img, .galeria section iframe {
+  padding: 5px; }
+
 header {
   background-color: #FFB2BF;
   display: flex;
@@ -38,7 +44,7 @@ header {
         background-color: #ff90a2;
         border-radius: 10px;
         box-shadow: 10px 5px 5px #f55c76;
-        transform: scale(1.1);
+        transform: scale(1.15);
         font-weight: bold; }
 
 @media screen and (min-width: 992px) {
@@ -100,12 +106,6 @@ footer {
     width: 100%; }
     footer .escudos-clubes {
       padding-top: 5px; } }
-
-.img-cont img {
-  padding: 10px 0px; }
-
-.galeria section img, .galeria section iframe {
-  padding: 5px; }
 
 .falso-body {
   display: flex;
