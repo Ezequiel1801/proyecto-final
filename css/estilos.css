@@ -36,16 +36,7 @@ header {
       list-style: none;
       gap: 1rem;
       font-size: 15px;
-      text-align: center;
-      overflow: hidden;
-      transition: transform 0.3s ease;
-      overflow: visible; }
-      header nav ul li:hover {
-        background-color: #ff90a2;
-        border-radius: 10px;
-        box-shadow: 10px 5px 5px #f55c76;
-        transform: scale(1.15);
-        font-weight: bold; }
+      text-align: center; }
 
 @media screen and (min-width: 992px) {
   header nav .div-header img {
@@ -57,24 +48,35 @@ header {
       overflow: hidden;
       transition: transform 0.3s ease; }
       header nav .div-header .header-gr img:hover {
-        transform: scale(1.1); } }
+        transform: scale(1.1); }
+  header nav ul {
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    overflow: visible; }
+    header nav ul li:hover {
+      background-color: #ff90a2;
+      border-radius: 10px;
+      box-shadow: 10px 5px 5px #f55c76;
+      transform: scale(1.15);
+      font-weight: bold; } }
 
 footer {
   display: flex;
   flex-direction: column;
   text-align: center;
   background-color: #FFB2BF;
-  width: 100vw; }
+  width: 100%; }
   footer .redes {
     padding: 5px 10px;
-    gap: 10px;
+    gap: 20px;
     text-align: center; }
     footer .redes img {
       overflow: hidden;
       transition: transform 0.3s ease;
       display: inline-block;
       height: 35px;
-      width: 35px; }
+      width: 35px;
+      margin: 0px 20px; }
       footer .redes img:hover {
         transform: scale(1.1); }
     footer .redes p {
@@ -83,16 +85,15 @@ footer {
       font-weight: bold; }
     footer .redes .twitter {
       border-radius: 10px; }
-  footer .escudos-clubes {
-    margin: 10px 0px; }
-    footer .escudos-clubes img {
-      overflow: hidden;
-      transition: transform 0.3s ease;
-      display: inline-block;
-      height: 40px;
-      width: 40px; }
-      footer .escudos-clubes img:hover {
-        transform: scale(1.2); }
+  footer .escudos-clubes img {
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    margin: 10px 7px; }
+    footer .escudos-clubes img:hover {
+      transform: scale(1.2); }
 
 /* MQ Tablet */
 @media screen and (min-width: 600px) {

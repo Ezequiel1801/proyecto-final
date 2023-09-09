@@ -24,15 +24,6 @@ header{
             gap: 1rem;
             font-size: 15px;
             text-align: center;
-            @include animacion-img;
-            overflow: visible;
-            li:hover{
-                background-color: $color-secundario;
-                border-radius: 10px;
-                box-shadow: 10px 5px 5px $color-sombra;
-                transform: scale(1.15);
-                font-weight: bold;
-            }
         }
     }
 }
@@ -53,6 +44,17 @@ header{
                             transform: scale(1.1);
                         }
                     }
+                }
+            }
+            ul{
+                @include animacion-img;
+                overflow: visible;
+                li:hover{
+                    background-color: $color-secundario;
+                    border-radius: 10px;
+                    box-shadow: 10px 5px 5px $color-sombra;
+                    transform: scale(1.15);
+                    font-weight: bold;
                 }
             }
         }

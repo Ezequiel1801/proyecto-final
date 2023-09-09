@@ -3,16 +3,17 @@ footer{
     flex-direction: column;
     text-align: center;
     background-color: $color-principal;
-    width: 100vw;
+    width: 100%;
     .redes{
         padding: 5px 10px;
-        gap: 10px;
+        gap: 20px;
         text-align: center;
         img{
             @include animacion-img;
             display: inline-block;
             height: 35px;
             width: 35px;
+            margin: 0px 20px;
             &:hover{
                 transform: scale(1.1);
             }
@@ -27,12 +28,12 @@ footer{
         }
     }
     .escudos-clubes{
-        margin: 10px 0px;
         img{
             @include animacion-img;
             display: inline-block;
             height: 40px;
             width: 40px;
+            margin: 10px 7px;
             &:hover{
                 transform: scale(1.2);
             }
