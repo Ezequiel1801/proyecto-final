@@ -1,0 +1,449 @@
+/* estilos universales */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+}
+
+body{
+    background-color: black;
+}
+
+header{
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-around;
+    grid-area: header;
+    background-color: #FFB2BF;
+}
+
+header nav ul{
+    display: flex;
+    list-style: none;
+    gap: 0.5rem;
+    font-size: 15px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+/* estilos pag principal */
+.falso-body{
+    height: 155vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: 
+        "header"
+        "main"
+        "imgmessi"
+        "footer";
+    gap: 10px;
+}
+
+main{
+    grid-area: main;
+}
+
+.falso-body main h1{
+    padding: 10px;
+    text-align: center;
+}
+
+div .img-cont img{
+    width: 100%;
+    height: 100%;
+    grid-area: imgmessi;
+}
+
+main div .parrafo{
+    grid-area: parrafo;
+    
+}
+
+.parrafo{
+    font-size: 15px;
+    padding: 0px 5px 0px 5px;
+    text-align: center;
+}
+
+footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-area: footer;
+    background-color: #FFB2BF;
+    
+}
+
+footer div{
+    padding: 5px 10px;
+    gap: 10px;
+}
+
+footer .redes img{
+    display: inline-block;
+    height: 35px;
+    width: 35px;
+}
+
+footer .redes{
+    text-align: center;
+}
+
+footer .redes p{
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+footer .escudos-clubes img{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    margin-top: 10px;
+}
+
+.img-messiwc{
+    display: none;
+}
+
+/* Estilos Trofeos */
+
+.trofeos{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-around;
+}
+
+.trofeos div{
+    width: auto;
+}
+
+.disp img{
+    display: inline-block;
+    width: 95px;
+    height: 155px;
+    margin-bottom: 10px;
+}
+
+.disp{
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.disp p{
+    margin-bottom: 5px;
+}
+
+/* trofeos de clubes */
+
+section .mundial-de-clubes img{
+    width: 65px;
+}
+
+section .supercopa-de-europa img{
+    width: 75px;
+}
+
+section .ligue-one img{
+    width: 150px;
+    height: 150px;
+}
+
+section .supercopa-de-francia img{
+    width: 155px;
+}
+
+section .leagues-cup img{
+    width: 125px;
+}
+
+/* trofeos de seleccion */
+
+section .copa-america img{
+    width: 70px;
+}
+
+section .mundial-sub img{
+    width: 60px;
+}
+
+section .juegos-olimpicos img{
+    width: 87px;
+}
+
+section .copa-del-mundo img{
+    width: 65px;
+}
+
+section .finalissima img{
+    width: 105px;
+}
+
+/* trofeos individuales */
+section .balon-de-oro img{
+    width: 115px;
+    height: 115px;
+}
+
+section .bota-de-oro img{
+    width: 135px;
+}
+
+section .pichichi img, .mvp-laliga img, .goleador-champions img, .mvp-europa img{
+    width: 110px;
+}
+
+section .balon-de-oro-mundial img{
+    width: 65px;
+}
+
+/* estilos de letras del salon de trofeos */
+.salon-trofeos h1{
+    font-size: 45px;
+}
+
+.salon-trofeos h2, .salon-trofeos h3, .salon-trofeos h4{
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Estilos galeria */
+
+main .galeria{
+    display: flex;
+    flex-direction: column;
+}
+
+main section .img-messi-joven{
+    gap: 10px;
+}
+
+.galeria section img{
+    max-width: 100%;
+    padding: 5px 0px 5px 0px;
+    border-radius: 10px;
+}
+
+.galeria section iframe{
+    width: 100%;
+    height: 315px;
+}
+
+/* Estilos contacto */
+
+.main-contacto{
+    display: flex;
+    flex-direction: column;
+}
+
+.text-main{
+    text-align: center;
+    margin: 10px;
+}
+
+.text-main h1{
+    font-size: 35px;
+}
+
+.form-style{
+    background-color: #FFB2BF;
+    margin: auto;
+    margin-bottom: 20px;
+    width: 90%;
+    max-width: 400px;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.formulario{
+    display: grid;
+    text-align: center;
+    font-size: 20px;
+    gap: 10px;
+}
+
+label, input, textarea{
+    color: black;
+}
+
+input, textarea{
+    padding: 5px;
+}
+
+.boton-enviar{
+    background-color: #ff748b;
+    border: none;
+    border-radius: 15px;
+}
+
+/* Estilos Prox Partidos */
+
+.main-prox-partidos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.partidos-club{
+    background-color: #FFB2BF;
+    border: solid 2px white;
+    margin: 10px;
+}
+
+table{
+    font-size: 18px;
+}
+
+thead{
+    background-color: #ff90a2;
+}
+
+th{
+    padding: 15px 10px;
+    font-weight: bold;
+    color: black;
+}
+
+td{
+    padding: 15px;
+    border-bottom: solid 1px black;
+    color: black;
+}
+
+td p{
+    color: black;
+}
+
+tbody tr:hover{
+    background-color: #ff7e93;
+}
+
+td img{
+    width: 20px;
+    height: 20px;
+}
+
+td .nashville{
+    width: 15px;
+}
+
+td .lafc{
+    width: 23px;
+}
+
+/* mq Desktop */
+
+@media screen and (min-width: 600px){
+
+    /* mq index */
+    .falso-body{
+        width: 100%;
+        grid-template-columns: 1fr 1fr auto;
+        grid-template-rows: auto auto auto 5%;
+        grid-template-areas: 
+            "header header header"
+            "main   main   imgmessi"
+            "main   main   imgmessi"
+            "footer footer footer";
+        gap: 10px;
+        background-color: black;
+    }
+
+    .img-cont{
+        grid-area: imgmessi;
+        padding-right: 10px;
+    }
+
+    .img-messi{
+        display: none;
+    }
+
+    div .img-messiwc{
+        display: flex;
+    }
+
+    header{
+        font-size: 30px;
+        padding: 0px 15px 0px 15px;
+    }
+
+    main div .parrafo{
+        font-size: 25px;
+    }
+
+    main{
+        grid-area: main;
+    }
+
+    header nav ul{
+        gap: 1.5rem;
+        padding-right: 10px;
+    }
+
+    footer .escudos-clubes{
+        display: flex;
+        justify-content: center;
+    }
+
+    /* mq galeria */
+
+    .galeria section{
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        gap: 10px;
+        margin: 10px;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .galeria section img{
+        width: 100%;
+        height: 600px;
+        object-fit: cover;
+        padding: 0px;
+    }
+
+    .galeria section iframe{
+        width: 560px;
+        height: 315px;
+    }
+
+    /* mq trofeos */
+
+    .salon-trofeos section{
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    /* mq contacto */
+
+    .main-contacto{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .text-main h1{
+        font-size: 100px;
+    }
+
+    .text-main h2{
+        font-size: 60px;
+    }
+
+    .text-main h3{
+        font-size: 35px;
+    }
+
+    .form-style{
+        align-items: center;
+        margin: 30px 0px 30px 0px;
+    }
+}
