@@ -26,7 +26,7 @@ header {
       width: 100%; }
       header nav .div-header img {
         overflow: hidden;
-        transition: transform 0.3s ease;
+        transition: transform 0.5s ease;
         overflow: visible; }
         header nav .div-header img:hover {
           transform: scale(1.1); }
@@ -46,12 +46,12 @@ header {
     header nav .div-header .header-gr img {
       display: inline-block;
       overflow: hidden;
-      transition: transform 0.3s ease; }
+      transition: transform 0.5s ease; }
       header nav .div-header .header-gr img:hover {
         transform: scale(1.1); }
   header nav ul {
     overflow: hidden;
-    transition: transform 0.3s ease;
+    transition: transform 0.5s ease;
     overflow: visible; }
     header nav ul li:hover {
       background-color: #ff90a2;
@@ -72,7 +72,7 @@ footer {
     text-align: center; }
     footer .redes img {
       overflow: hidden;
-      transition: transform 0.3s ease;
+      transition: transform 0.5s ease;
       display: inline-block;
       height: 35px;
       width: 35px;
@@ -87,7 +87,7 @@ footer {
       border-radius: 10px; }
   footer .escudos-clubes img {
     overflow: hidden;
-    transition: transform 0.3s ease;
+    transition: transform 0.5s ease;
     display: inline-block;
     height: 40px;
     width: 40px;
@@ -217,7 +217,32 @@ section .balon-de-oro-mundial img {
 /* MQ Tablet */
 @media screen and (min-width: 600px) {
   .trofeos {
-    grid-template-columns: repeat(3, auto); } }
+    grid-template-columns: repeat(3, auto); }
+    .trofeos .disp {
+      position: relative; }
+      .trofeos .disp p {
+        margin: 0px; }
+      .trofeos .disp .text-hover {
+        border-radius: 5px;
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        padding: 5px;
+        font-size: 15px;
+        width: 150px;
+        background-color: black;
+        box-shadow: 0px 0px 10px white;
+        transition: 0s; }
+    .trofeos .disp:hover img {
+      overflow: hidden;
+      transition: transform 0.5s ease;
+      filter: blur(2px);
+      transform: scale(1.1); }
+    .trofeos .disp:hover .text-hover {
+      opacity: 1;
+      transition: 1s; } }
 
 /* MQ Desktop */
 @media screen and (min-width: 1024px) {

@@ -113,6 +113,36 @@ section{
 @media screen and (min-width: 600px){
     .trofeos{
         grid-template-columns: repeat(3, auto);
+        
+        .disp{
+            position: relative;
+            p{
+                margin: 0px;
+            }
+            .text-hover{
+                border-radius: 5px;
+                position: absolute;
+                top: 60%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                opacity: 0;
+                padding: 5px;
+                font-size: 15px;
+                width: 150px;
+                background-color: black;
+                box-shadow: 0px 0px 10px white;
+                transition: 0s;
+            }
+        }
+        .disp:hover img{
+            @include animacion-img;
+            filter: blur(2px);
+            transform: scale(1.1);
+        }
+        .disp:hover .text-hover{
+            opacity: 1;
+            transition: 1s;
+        }
     }
 }
 
