@@ -15,7 +15,7 @@
         max-width: 400px;
         padding: 15px;
         border-radius: 15px;
-        box-shadow: 15px 10px 15px $color-secundario;
+        box-shadow: 10px 10px 25px $color-secundario;
         .formulario{
             @include grid(center, center);
             text-align: center;

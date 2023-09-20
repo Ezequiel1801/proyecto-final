@@ -19,7 +19,10 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 100%; }
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  top: 0; }
   header nav {
     width: 100%; }
     header nav .div-header {
@@ -120,16 +123,17 @@ footer {
 .img-cont img {
   width: 100%; }
 
-main div h1 {
-  padding: 10px;
-  text-align: center;
-  font-size: 45px;
-  text-decoration: underline; }
-
-main div .parrafo {
-  font-size: 15px;
-  text-align: center;
-  padding: 0px 5px; }
+main {
+  margin-top: 100px; }
+  main div h1 {
+    padding: 10px;
+    text-align: center;
+    font-size: 45px;
+    text-decoration: underline; }
+  main div .parrafo {
+    font-size: 15px;
+    text-align: center;
+    padding: 0px 5px; }
 
 /* MQ Desktop */
 @media screen and (min-width: 1024px) {
@@ -369,7 +373,7 @@ section .balon-de-oro-mundial img {
     max-width: 400px;
     padding: 15px;
     border-radius: 15px;
-    box-shadow: 15px 10px 15px #ff90a2; }
+    box-shadow: 10px 10px 25px #ff90a2; }
     .main-contacto .form-style .formulario {
       display: grid;
       justify-content: center;
